@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  padding-top: 150px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form_messages {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #262626;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #f0fa97;
+}
+
+.form_messages.success {
+  background-color: #00aeef;
+}
+
+.validator-form p {
+  margin-bottom: 20px;
+}
+
+.validator-form label {
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #214F6F;
+  margin-bottom: 20px;
+}
+
+.validator-form input {
+  width: 100%;
+  padding: 10px 5%;
+  min-height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #214F6F;
+}
+
+.validator-form input[type="checkbox"] {
+  width: 20px;
+  padding: 0;
+  margin: 10px 0;
+  min-height: 15px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  font: 18px Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  color: #214F6F;
+}
+
+.validator-form select {
+  width: 100%;
+  padding: 10px 5%;
+  min-height: 40px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #214F6F;
+  outline: #214F6F;
+}
+
+.validator-form textarea {
+  width: 100%;
+  padding: 10px 5%;
+  min-height: 240px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #214F6F;
+  outline: #214F6F;
+}
+
+.validator-form button {
+  width: 100%;
+  padding: 10px 5%;
+  min-height: 40px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  font: 18px Arial, Helvetica, sans-serif;
+  color: #214F6F;
+}
+
+.validator-form button:hover {
+  background-color: #214F6F;
+  color: #fff;
+}
+
+.validator-form input:focus,
+.validator-form select:focus,
+.validator-form textarea:focus {
+  outline: #214F6F dotted 1px;
+}
+
+.validator-form .error input,
+.validator-form .error textarea,
+.validator-form .error select {
+  background-color: #FDD7D7;
+  border-color: #F39F9F;
+  color: #962D2D;
+}
+
+.validator-form .error input::-webkit-input-placeholder,
+.validator-form .error textarea::-webkit-input-placeholder,
+.validator-form .error select::-webkit-input-placeholder {
+  color: #962D2D;
+}
+
+.validator-form .error input::-moz-placeholder,
+.validator-form .error textarea::-moz-placeholder,
+.validator-form .error select::-moz-placeholder {
+  color: #962D2D;
+}
+
+.validator-form .error input:-ms-input-placeholder,
+.validator-form .error textarea:-ms-input-placeholder,
+.validator-form .error select:-ms-input-placeholder {
+  color: #962D2D;
+}
+
+.validator-form .error label {
+  color: #f00;
+}
+
+.validator-form .form_messages {
+  position: static;
+  margin-top: 20px;
+}

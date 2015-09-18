@@ -1,0 +1,114 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: #efefef
+  padding-top: 150px
+
+.container
+  width: 600px
+  margin: 0 auto
+
+.form_messages
+  width: 100%
+  padding: 20px 0px
+  text-align: center
+  font: 18px Arial, Helvetica, sans-serif
+  color: #262626
+  position: fixed
+  top: 0px
+  z-index: 2
+  background-color: #f0fa97
+
+.form_messages.success
+  background-color: #00aeef
+
+.validator-form
+  p
+    margin-bottom: 20px
+
+  label
+    font: 18px Arial, Helvetica, sans-serif
+    color: #214F6F
+    margin-bottom: 20px
+
+  input
+    width: 100%
+    padding: 10px 5%
+    min-height: 40px
+    background-color: #fff
+    border: 1px solid #ccc
+    font: 18px Arial, Helvetica, sans-serif
+    color: #214F6F
+  
+  input[type="checkbox"]
+    width: 20px
+    padding: 0
+    margin: 10px 0
+    min-height: 15px
+    background-color: #FFF
+    border: 1px solid #CCC
+    font: 18px Arial, Helvetica, sans-serif
+    line-height: 18px
+    color: #214F6F
+
+  select
+    width: 100%
+    padding: 10px 5%
+    min-height: 40px
+    background-color: #FFF
+    border: 1px solid #CCC
+    font: 18px Arial, Helvetica, sans-serif
+    color: #214F6F
+    outline: #214F6F
+
+  textarea
+    width: 100%
+    padding: 10px 5%
+    min-height: 240px
+    background-color: #FFF
+    border: 1px solid #CCC
+    font: 18px Arial, Helvetica, sans-serif
+    color: #214F6F
+    outline: #214F6F
+
+  button
+    width: 100%
+    padding: 10px 5%
+    min-height: 40px
+    background-color: #FFF
+    border: 1px solid #CCC
+    font: 18px Arial, Helvetica, sans-serif
+    color: #214F6F
+    
+    &:hover
+      background-color: #214F6F
+      color: #fff
+
+  input:focus,
+  select:focus,
+  textarea:focus
+    outline: #214F6F dotted 1px
+
+  .error
+    input,
+    textarea,
+    select
+      background-color: #FDD7D7
+      border-color: #F39F9F
+      color: #962D2D
+
+      &::-webkit-input-placeholder
+        color: #962D2D
+      &::-moz-placeholder
+        color: #962D2D
+      &:-ms-input-placeholder
+        color: #962D2D
+    label
+      color: #f00
+
+  .form_messages
+    position: static
+    margin-top: 20px
